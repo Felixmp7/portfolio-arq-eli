@@ -1,3 +1,66 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "no-shadow": "error",
+    "react/no-array-index-key": "error",
+    "react/require-default-props": "off",
+    "react/function-component-definition": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-props-no-spreading": "off",
+    "no-unused-expressions": "error",
+    "no-unused-vars":"error",
+    "camelcase": "error",
+    "prefer-const": "error",
+    "comma-dangle": "error",
+    "semi": "error",
+    "max-params":"error",
+    "no-nested-ternary": "error",
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx"
+        ]
+      }
+    ],
+    "indent": "error",
+    "react/jsx-indent": [
+      "error",
+      4
+    ],
+    "import/no-cycle": [
+      0,
+      {
+        "ignoreExternal": true
+      }
+    ],
+    "no-use-before-define": "error",
+    "react/jsx-indent-props": [
+      "error",
+      4
+    ],
+    "react/prop-types": "off",
+    "radix": 0,
+    "react/self-closing-comp": ["error", {
+      "component": true,
+      "html": true
+    }],
+    "object-curly-newline": "error",
+    "object-property-newline": ["error", {
+      "allowAllPropertiesOnSameLine": false
+    }],
+    "max-len": [
+      "error",
+      {
+        "code": 300,
+        "ignoreUrls": true,
+        "ignoreComments": true,
+        "ignoreRegExpLiterals": true
+      }
+    ],
+    "import/extensions": "off"
+  }
 }
