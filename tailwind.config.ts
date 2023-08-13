@@ -21,39 +21,40 @@ const config: Config = {
             colors: {
                 isabelline: {
                     DEFAULT: '#F8F5EF',
-                    relaxed: '#F4ECE1',
-                    medium: '#EEE3D2',
-                    dark: '#E3D1B5'
+                    500: '#F4ECE1',
+                    600: '#EEE3D2',
+                    700: '#E3D1B5',
+                    800: '#BC904E'
                 },
                 'dravys-gray': {
                     DEFAULT: '#4F5050',
-                    relaxed: '#474848',
-                    medium: '#3D3E3E',
-                    dark: '#323434'
+                    500: '#474848',
+                    600: '#3D3E3E',
+                    700: '#323434'
                 },
                 'rose-taupe': {
                     DEFAULT: '#835155',
-                    relaxed: '#7E4E52',
-                    medium: '#724649',
-                    dark: '#653E41'
+                    500: '#7E4E52',
+                    600: '#724649',
+                    700: '#653E41'
                 },
                 redwood: {
                     DEFAULT: '#B7545F',
-                    relaxed: '#AD4854',
-                    medium: '#9E424D',
-                    dark: '#903C46'
+                    500: '#AD4854',
+                    600: '#9E424D',
+                    700: '#903C46'
                 },
                 'indian-red': {
                     DEFAULT: '#EB5665',
-                    relaxed: '#EA4859',
-                    medium: '#E73648',
-                    dark: '#E52437'
+                    500: '#EA4859',
+                    600: '#E73648',
+                    700: '#E52437'
                 },
                 'blue-munsel': {
                     DEFAULT: '#1B96AD',
-                    relaxed: '#198B9F',
-                    medium: '#167B8D',
-                    dark: '#136C7C'
+                    500: '#198B9F',
+                    600: '#167B8D',
+                    700: '#136C7C'
                 }
             },
             backgroundImage: {
