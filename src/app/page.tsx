@@ -1,13 +1,13 @@
 import { AboutResume } from "@/components/home/AboutResume";
 import { MainHeader } from "@/components/home/MainHeader";
+import { ServicesResume } from "@/components/home/ServicesResume";
 
 export default function Home() {
     return (
         <>
             <MainHeader />
-            <div className="px-40">
-                <AboutResume />
-            </div>
+            <AboutResume />
+            <ServicesResume />
         </>
     );
 }
