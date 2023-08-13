@@ -1,19 +1,18 @@
 import Link from 'next/link';
 
-
 export const NavbarItems = () => {
     return (
         <>
-            <li className="duration-150 ease-in hover:text-dravys-gray">
+            <li className="hover:underline">
                 <Link href="/about">Acerca De</Link>
             </li>
-            <li className="duration-150 ease-in hover:text-rose-taupe">
+            <li className="hover:underline">
                 <Link href="/projects">Proyectos</Link>
             </li>
-            <li className="duration-150 ease-in hover:text-redwood">
+            <li className="hover:underline">
                 <Link href="/services">Servicios</Link>
             </li>
-            <li className="duration-150 ease-in hover:text-indian-red">
+            <li className="hover:underline">
                 <Link href="/contact">Contacto</Link>
             </li>
         </>
