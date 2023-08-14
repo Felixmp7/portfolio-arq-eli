@@ -81,7 +81,7 @@ export const Projects = () => {
                 <Carousel loop>
                     {example.map(({ category, src, title }) => {
                         return (
-                            <div className="relative h-[700px] flex-[0_0_100%]" key={src}>
+                            <div className="relative h-[400px] xl:h-[700px] flex-[0_0_100%]" key={src}>
                                 <Layer
                                     title={title}
                                     src={src}

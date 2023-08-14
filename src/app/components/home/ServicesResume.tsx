@@ -5,9 +5,9 @@ import Image from "next/image";
 
 export const ServicesResume = () => {
     return (
-        <section className="text-center py-10 px-40">
+        <section className="text-center py-10 px-10 sm:px-20 lg:px-40">
             <SectionTitle title="Mis" complement="Servicios" />
-            <div className="grid grid-cols-4 gap-20 mt-12 text-left">
+            <div className="grid sm:grid-cols-2 xl:grid-cols-4 gap-20 mt-12 text-left">
                 <div className="text-7xl">
                     <Image
                         src="/assets/svg-icons/pencil-rule.svg"

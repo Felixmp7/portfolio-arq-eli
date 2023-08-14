@@ -7,7 +7,7 @@ import { PiBuildingsThin, PiCompassToolThin, PiWarehouseThin } from 'react-icons
 
 export const AboutResume = () => {
     return (
-        <section className="text-center py-10 px-40">
+        <section className="text-center py-10 px-10 sm:px-20 lg:px-40">
             <SectionTitle title="Sobre" complement="EAGV" />
             <div className="xl:flex xl:justify-between xl:gap-20 mt-12 text-left">
                 <div className="xl:mb-0 mb-10">
