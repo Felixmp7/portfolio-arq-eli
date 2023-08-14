@@ -7,7 +7,7 @@ export const ServicesResume = () => {
     return (
         <section className="text-center py-10 px-40">
             <SectionTitle title="Mis" complement="Servicios" />
-            <div className="grid grid-cols-3 gap-20 mt-12 text-left">
+            <div className="grid grid-cols-4 gap-20 mt-12 text-left">
                 <div className="text-7xl">
                     <Image
                         src="/assets/svg-icons/pencil-rule.svg"
@@ -16,9 +16,9 @@ export const ServicesResume = () => {
                         width={70}
                         height={70}
                     />
-                    <Subtitle2 subtitle="Design" />
+                    <Subtitle2 subtitle="Diseño de interiores" />
                     <p className="text-gray-500 leading-6 text-sm mt-3">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                     </p>
                 </div>
                 <div className="text-7xl">
@@ -29,22 +29,35 @@ export const ServicesResume = () => {
                         width={70}
                         height={70}
                     />
-                    <Subtitle2 subtitle="House Plans" />
+                    <Subtitle2 subtitle="Planos" />
                     <p className="text-gray-500 leading-6 text-sm mt-3">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                     </p>
                 </div>
                 <div className="text-7xl">
                     <Image
-                        src="/assets/svg-icons/keys.svg"
+                        src="/assets/svg-icons/3d.svg"
                         alt="Buildings"
                         className="mb-4"
                         width={70}
                         height={70}
                     />
-                    <Subtitle2 subtitle="Finishing Works" />
+                    <Subtitle2 subtitle="Modelado 3D" />
                     <p className="text-gray-500 leading-6 text-sm mt-3">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </p>
+                </div>
+                <div className="text-7xl">
+                    <Image
+                        src="/assets/svg-icons/renders.svg"
+                        alt="Buildings"
+                        className="mb-4"
+                        width={70}
+                        height={70}
+                    />
+                    <Subtitle2 subtitle="Renders" />
+                    <p className="text-gray-500 leading-6 text-sm mt-3">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                     </p>
                 </div>
             </div>
