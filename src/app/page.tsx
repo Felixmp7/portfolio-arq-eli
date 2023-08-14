@@ -1,5 +1,6 @@
 import { AboutResume } from "@/components/home/AboutResume";
 import { MainHeader } from "@/components/home/MainHeader";
+import { Projects } from "@/components/home/Projects";
 import { ServicesResume } from "@/components/home/ServicesResume";
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
         <>
             <MainHeader />
             <AboutResume />
+            <Projects />
             <ServicesResume />
         </>
     );
