@@ -1,7 +1,9 @@
 {
-  "extends": "next/core-web-vitals",
+  "extends": [
+    "next/core-web-vitals"
+  ],
   "rules": {
-    "no-shadow": "error",
+    "no-shadow": "off",
     "react/no-array-index-key": "error",
     "react/require-default-props": "off",
     "react/function-component-definition": "off",
@@ -15,39 +17,9 @@
     "semi": "error",
     "max-params":"error",
     "no-nested-ternary": "error",
-    "react/jsx-filename-extension": [
-      1,
-      {
-        "extensions": [
-          ".js",
-          ".jsx",
-          ".ts",
-          ".tsx"
-        ]
-      }
-    ],
     "indent": "error",
-    "react/jsx-indent": [
-      "error",
-      4
-    ],
-    "import/no-cycle": [
-      0,
-      {
-        "ignoreExternal": true
-      }
-    ],
     "no-use-before-define": "error",
-    "react/jsx-indent-props": [
-      "error",
-      4
-    ],
-    "react/prop-types": "off",
-    "radix": 0,
-    "react/self-closing-comp": ["error", {
-      "component": true,
-      "html": true
-    }],
+    "radix": "off",
     "object-curly-newline": "error",
     "object-property-newline": ["error", {
       "allowAllPropertiesOnSameLine": false
@@ -61,6 +33,8 @@
         "ignoreRegExpLiterals": true
       }
     ],
-    "import/extensions": "off"
+    "react/jsx-indent": ["error",4],
+    "import/no-cycle": [0,{"ignoreExternal": true}],
+    "react/jsx-indent-props": ["error",4]
   }
 }
