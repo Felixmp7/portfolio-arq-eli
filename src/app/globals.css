@@ -23,4 +23,10 @@
     background-size: cover;
     background-position-y: bottom;
   }
+
+  @media screen and (max-width: 640px) {
+    .bg-main-banner {
+      background-position-x: center;
+    }
+  }
 }

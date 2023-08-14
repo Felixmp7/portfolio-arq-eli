@@ -33,7 +33,7 @@ export const AboutResume = () => {
                         </div>
                     </div>
                 </div>
-                <div className="hidden xl:visible max-w-sm w-full h-80 relative">
+                <div className="hidden xl:block max-w-sm w-full h-80 relative">
                     <Image
                         fill
                         src="/assets/about.jpeg"
