@@ -18,14 +18,14 @@
 }
 
 @layer utilities {
-  .bg-main-banner {
+  .bg-home-banner {
     background-image: url('/assets/banners/kitchen.jpeg');
     background-size: cover;
     background-position-y: bottom;
   }
 
   @media screen and (max-width: 640px) {
-    .bg-main-banner {
+    .bg-home-banner {
       background-position-x: center;
     }
   }
