@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 import { BannerHeader } from "@/components/BannerHeader";
-import { ServicesResume } from "@/components/home/ServicesResume";
+import { ContactForm } from "@/components/forms/ContactForm";
 
 export default function ContactPage() {
     return (
@@ -13,7 +13,7 @@ export default function ContactPage() {
                     </p>
                 </div>
             </BannerHeader>
-            <ServicesResume />
+            <ContactForm />
         </>
     );
 }
