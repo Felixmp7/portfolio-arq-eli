@@ -20,6 +20,7 @@
     "indent": "error",
     "no-use-before-define": "error",
     "radix": "off",
+    "react/display-name": "off",
     "object-curly-newline": "error",
     "object-property-newline": ["error", {
       "allowAllPropertiesOnSameLine": false
