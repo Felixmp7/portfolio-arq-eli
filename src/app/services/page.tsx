@@ -2,7 +2,7 @@
 import { BannerHeader } from "@/components/BannerHeader";
 import { ServicesResume } from "@/components/home/ServicesResume";
 
-export default function Services() {
+export default function ServicesPage() {
     return (
         <>
             <BannerHeader bgClassName="bg-services-banner h-common-banner bg-common-config">

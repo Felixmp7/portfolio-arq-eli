@@ -4,7 +4,7 @@ import { Projects } from "@/components/home/Projects";
 import { ServicesResume } from "@/components/home/ServicesResume";
 import Link from "next/link";
 
-export default function Home() {
+export default function HomePage() {
     return (
         <>
             <BannerHeader bgClassName="bg-home-banner h-main-banner bg-home-config">
