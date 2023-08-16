@@ -49,13 +49,15 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className={inter.className}>
-                <main className='container container-bg relative'>
+                <div className='container container-bg relative'>
                     <header className='absolute top-0 left-0 right-0 px-container text-white'>
                         <Navbar />
                     </header>
-                    {children}
+                    <main>
+                        {children}
+                    </main>
                     <Footer />
-                </main>
+                </div>
             </body>
         </html>
     );

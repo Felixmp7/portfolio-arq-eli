@@ -6,3 +6,9 @@ export enum EProjectsCategory {
     livingrooms = 'livingrooms',
     bedrooms = 'bedrooms',
 }
+
+export type TNavLink = {
+    id: number,
+    url: string,
+    name: string
+}

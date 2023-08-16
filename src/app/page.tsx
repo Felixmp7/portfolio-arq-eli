@@ -6,7 +6,7 @@ import { ServicesResume } from "@/components/home/ServicesResume";
 export default function Home() {
     return (
         <>
-            <BannerHeader bgClassName="bg-home-banner">
+            <BannerHeader bgClassName="bg-home-banner h-main-banner bg-home-config">
                 <div className="px-10 py-5">
                     <h1 className='mb-5 select-none'>
                         <span className="text-4xl md:text-6xl font-semibold">Arquitecto</span>,

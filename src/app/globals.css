@@ -15,17 +15,41 @@
   .px-container {
     @apply px-10;
   }
+  .h-main-banner {
+    @apply h-[80vh];
+  }
+  .h-common-banner {
+    @apply h-[50vh];
+  }
 }
 
 @layer utilities {
-  .bg-home-banner {
-    background-image: url('/assets/banners/kitchen.jpeg');
+  .bg-home-config {
     background-size: cover;
     background-position-y: bottom;
   }
+  .bg-common-config {
+    background-size: cover;
+    background-position: center;
+  }
+  .bg-home-banner {
+    background-image: url('/assets/banners/kitchen.jpeg');
+  }
+
+  .bg-services-banner {
+    background-image: url('/assets/banners/bedroom.png');
+  }
+
+  .bg-projects-banner {
+    background-image: url('/assets/banners/office.png');
+  }
+
+  .bg-contact-banner {
+    background-image: url('/assets/banners/font.jpeg');
+  }
 
   @media screen and (max-width: 640px) {
-    .bg-home-banner {
+    .bg-home-config {
       background-position-x: center;
     }
   }
