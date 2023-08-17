@@ -2,12 +2,15 @@ import { TSendEmailForm } from "@/types/index";
 
 export const EmailTemplate: React.FC<Readonly<TSendEmailForm>> = ({ name, message, phone, company, email }) => (
     <div>
-        <h1>Hola, Eliana!</h1>
-        <span>{`Mi nombre es ${name}`}</span>
-        <p>{message}</p>
+        <h1>Hola, Eliana! He recibido el siguiente correo desde tu portafolio:</h1>
+        <br />
+
+        <p className="text-xs pl-2">{`"${message}"`}</p>
+
         <br />
         <h2>Datos enviados desde el portafolio:</h2>
-        <ul className="list-group">
+        <ul className="text-xs space-y-1 pl-2">
+            <li>{`Nombre: ${name}`}</li>
             <li>{`Teléfono: ${phone}`}</li>
             <li>{`Email: ${email}`}</li>
             {company && (
