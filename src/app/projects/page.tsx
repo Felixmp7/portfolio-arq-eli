@@ -1,6 +1,5 @@
 /* eslint-disable max-len */
 import { BannerHeader } from "@/components/BannerHeader";
-import { ServicesResume } from "@/components/home/ServicesResume";
 
 export default function ProjectsPage() {
     return (
@@ -13,7 +12,7 @@ export default function ProjectsPage() {
                     </p>
                 </div>
             </BannerHeader>
-            <ServicesResume />
+            <div className="text-center py-20 text-6xl">Under construction</div>
         </>
     );
 }
