@@ -1,7 +1,7 @@
 'use client';
 
-import { TextAreaField } from "@/components/TextAreaField";
-import { TextField } from "@/components/TextField";
+import { TextAreaField } from "@/components/fields/TextAreaField";
+import { TextField } from "@/components/fields/TextField";
 import { BiSend } from 'react-icons/bi';
 import { useContactForm } from "src/app/hooks/useContactForm";
 
