@@ -1,8 +1,8 @@
 import { BannerHeader } from "@/components/BannerHeader";
+import { CTA } from "@/components/CTA";
 import { AboutResume } from "@/components/home/AboutResume";
 import { Projects } from "@/components/home/Projects";
 import { ServicesResume } from "@/components/home/ServicesResume";
-import Link from "next/link";
 
 export default function HomePage() {
     return (
@@ -20,7 +20,7 @@ export default function HomePage() {
                     <p className='max-w-md leading-5 md:max-w-xl md:leading-6 md:text-base mb-5'>
                         Hola, mi nombre es Eliana. Soy Arquitecto de Caracas, Venezuela. <br/> Tengo 26 años y me apasiona todo lo relacionado con planificación, diseño y desarrollo de proyectos de arquitectura.
                     </p>
-                    <Link href="/contact" className="py-2 border rounded-md hover:text-dravys-gray hover:bg-isabelline ease-in-out duration-300 px-4">Contratar</Link>
+                    <CTA />
                 </div>
             </BannerHeader>
             <AboutResume />
