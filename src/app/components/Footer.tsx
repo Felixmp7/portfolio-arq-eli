@@ -3,7 +3,7 @@ import { SocialMedia } from './SocialMedia';
 
 export const Footer = () => {
     return (
-        <footer className='flex flex-col py-6 items-center space-y-4 sm:space-y-0 sm:flex-row sm:justify-between px-container border-t border-t-dravys-gray-500 border-opacity-20'>
+        <footer className='flex flex-col py-6 items-center space-y-4 md:space-y-0 md:flex-row md:justify-between px-container border-t border-t-dravys-gray-500 border-opacity-20'>
             <ul className="flex gap-8 py-3">
                 <NavbarItems />
             </ul>
