@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function HomePage() {
     return (
         <>
-            <BannerHeader bgClassName="bg-home-banner h-main-banner bg-home-config">
+            <BannerHeader bgClassName="bg-home-banner">
                 <div className="px-10 py-5">
                     <h1 className='mb-5 select-none'>
                         <span className="text-4xl md:text-6xl font-semibold">Arquitecto</span>,

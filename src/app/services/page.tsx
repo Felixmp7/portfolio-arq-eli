@@ -1,11 +1,10 @@
 /* eslint-disable max-len */
 import { BannerHeader } from "@/components/BannerHeader";
-import { ServicesResume } from "@/components/home/ServicesResume";
 
 export default function ServicesPage() {
     return (
         <>
-            <BannerHeader bgClassName="bg-services-banner h-common-banner bg-common-config">
+            <BannerHeader bgClassName="bg-common-banner">
                 <div className="px-10 py-5">
                     <h1 className='mb-5 text-4xl md:text-6xl font-semibold select-none'>Servicios</h1>
                     <p className='max-w-md leading-5 md:max-w-xl md:leading-6 md:text-base mb-5'>
@@ -13,7 +12,6 @@ export default function ServicesPage() {
                     </p>
                 </div>
             </BannerHeader>
-            <ServicesResume />
         </>
     );
 }
