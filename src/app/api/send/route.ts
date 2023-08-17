@@ -8,7 +8,7 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 export async function postSendContactEmail({ email, name, phone, company, message }: TSendEmailForm) {
     try {
         const data = await resend.emails.send({
-            from: 'Acme <onboarding@resend.dev>',
+            from: `${name} <${email}>`,
             to: ['eliana.guerrero.arq@gmail.com'],
             subject: `Contacto a través del portafolio - ${name}`,
             text: undefined as any,
