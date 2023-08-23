@@ -16,6 +16,7 @@ export const Service = ({ title, resume, description, isReverseLayout, src }: IP
         'flex flex-col gap-y-10 md:gap-x-20 items-center md:flex-row z-20': true,
         'md:flex-row-reverse': isReverseLayout
     });
+
     return (
         <div className="py-container md:py-0 md:h-screen text-isabelline grid place-content-center px-container relative">
             <Image
@@ -30,7 +31,7 @@ export const Service = ({ title, resume, description, isReverseLayout, src }: IP
                     <p className="md:text-base font-light max-w-md mb-3">{resume}</p>
                     <CTA />
                 </div>
-                <div className="bg-isabelline shadow-md rounded-md p-5 text-dravys-gray-500 max-w-md">
+                <div className="bg-isabelline shadow-md rounded-md p-5 text-dravys-gray-500 max-w-md hover:scale-110 ease-in-out duration-75">
                     <Subtitle2 subtitle="¿En qué consiste?" />
                     <p className="mt-4 mb-8 font-light">{description}</p>
                     <Subtitle2 subtitle="Pautas Generales" />
