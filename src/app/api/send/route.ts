@@ -5,7 +5,7 @@ import { Resend } from 'resend';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-export async function postSendContactEmail({ email, name, phone, company, message }: TSendEmailForm) {
+export async function POST({ email, name, phone, company, message }: TSendEmailForm) {
     try {
         const data = await resend.emails.send({
             from: `${name} <${email}>`,
