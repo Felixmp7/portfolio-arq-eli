@@ -1,10 +1,68 @@
 /* eslint-disable max-len */
 import { BannerHeader } from "@/components/BannerHeader";
+import { SectionTitle } from "@/components/SectionTitle";
+import { ProjectItem } from "@/components/projects/ProjectItem";
+import clsx from "clsx";
+
+const examples = [
+    {
+        id: 1,
+        projectTitle: 'Santa Fé',
+        image: '/assets/banners/bedroom.png'
+    },
+    {
+        id: 2,
+        projectTitle: 'Las Rosas',
+        image: '/assets/banners/bedroom.png'
+    },
+    {
+        id: 3,
+        projectTitle: 'Santa Paula',
+        image: '/assets/banners/bedroom.png'
+    },
+    {
+        id: 4,
+        projectTitle: 'Macaracuay',
+        image: '/assets/banners/bedroom.png'
+    },
+    {
+        id: 5,
+        projectTitle: 'El Cafetal',
+        image: '/assets/banners/bedroom.png'
+    },
+    {
+        id: 6,
+        projectTitle: 'La California',
+        image: '/assets/banners/bedroom.png'
+    },
+    {
+        id: 7,
+        projectTitle: 'La Arboleda',
+        image: '/assets/banners/bedroom.png'
+    },
+    {
+        id: 8,
+        projectTitle: 'Santa Sofia',
+        image: '/assets/banners/bedroom.png'
+    },
+    {
+        id: 9,
+        projectTitle: 'Santa Fé',
+        image: '/assets/banners/bedroom.png'
+    },
+    {
+        id: 10,
+        projectTitle: 'Bello Monte',
+        image: '/assets/banners/bedroom.png'
+    }
+];
 
 export default function ProjectsPage() {
+    const interiorDesigns = examples.slice(0, 4);
+    const plans = examples.slice(5, 9);
     return (
         <>
-            <BannerHeader bgClassName="bg-common-banner">
+            <BannerHeader bgClassName="bg-common-config bg-isabelline-700">
                 <div className="px-10 py-5">
                     <h1 className='mb-5 text-4xl md:text-6xl font-semibold select-none'>Proyectos</h1>
                     <p className='max-w-md leading-5 md:max-w-xl md:leading-6 md:text-base mb-5'>
@@ -12,7 +70,42 @@ export default function ProjectsPage() {
                     </p>
                 </div>
             </BannerHeader>
-            <div className="text-center py-20 text-6xl">Under construction</div>
+            <section className="pt-24">
+                <SectionTitle title="Diseño" complement="De interiores" className="ml-10 mb-16" />
+                <div className="grid md:grid-cols-8 h-[800px] gap-1">
+                    {interiorDesigns.map(({ id, image, projectTitle }, index) => {
+                        const className = clsx({
+                            'relative': true,
+                            'md:col-span-5': index === 0 || index === 3,
+                            'md:col-span-3': index === 1 || index === 2
+                        });
+                        if (index === 3) index = 0;
+                        return (
+                            <div key={id} className={className}>
+                                <ProjectItem title={projectTitle} src={image} />
+                            </div>
+                        );
+                    })}
+                </div>
+            </section>
+            <section className="pt-24">
+                <SectionTitle title="Planos" className="ml-10 mb-16" />
+                <div className="grid md:grid-cols-8 h-[800px] gap-1">
+                    {plans.map(({ id, image, projectTitle }, index) => {
+                        const className = clsx({
+                            'relative': true,
+                            'md:col-span-5': index === 0 || index === 3,
+                            'md:col-span-3': index === 1 || index === 2
+                        });
+                        if (index === 3) index = 0;
+                        return (
+                            <div key={id} className={className}>
+                                <ProjectItem title={projectTitle} src={image} />
+                            </div>
+                        );
+                    })}
+                </div>
+            </section>
         </>
     );
 }
