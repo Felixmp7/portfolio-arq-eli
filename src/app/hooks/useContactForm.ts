@@ -2,7 +2,7 @@ import { TSendEmailForm } from "@/types/index";
 import { SendEmailSchema } from "@/utils/schemas/contact";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
-// import { postSendContactEmail } from "@/api/send/route";
+// import { POST } from "@/api/send/route";
 
 const defaultValues:TSendEmailForm = {
     email: '',
@@ -20,7 +20,7 @@ export const useContactForm = () => {
     const onSubmit = async (formValues: TSendEmailForm) => {
         console.log(formValues);
         // try {
-        //     const response = await postSendContactEmail(formValues);
+        //     const response = await POST(formValues);
         //     console.log(response);
         // } catch (error) {
         //     console.log(error);
