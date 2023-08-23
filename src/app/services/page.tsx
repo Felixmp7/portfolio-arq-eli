@@ -5,7 +5,7 @@ import { Service } from "@/components/services/Service";
 export default function ServicesPage() {
     return (
         <>
-            <BannerHeader bgClassName="bg-common-banner">
+            <BannerHeader bgClassName="bg-common-config bg-indian-red">
                 <div className="px-10 py-5">
                     <h1 className='mb-5 text-4xl md:text-6xl font-semibold select-none'>Servicios</h1>
                     <p className='max-w-md leading-5 md:max-w-xl md:leading-6 md:text-base mb-5'>
