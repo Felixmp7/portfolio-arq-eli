@@ -20,3 +20,19 @@ export type TNavLink = {
     url: string,
     name: string
 }
+
+export type TProjectDetails = {
+    images: string[],
+    title: string,
+    location: string
+    year: string,
+    goal: string,
+    description: string
+}
+
+export enum ETabKeyIcon {
+    title = 'title',
+    location = 'location',
+    year = 'year',
+    goal = 'goal',
+}
