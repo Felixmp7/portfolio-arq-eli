@@ -38,7 +38,6 @@
       touch-action: pan-y;
   }
   .embla-slide {
-    flex: 0 0 25%;
     min-width: 0;
     position: relative;
   }
