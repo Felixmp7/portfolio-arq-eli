@@ -36,3 +36,9 @@ export enum ETabKeyIcon {
     year = 'year',
     goal = 'goal',
 }
+
+export type TTrendingProject = {
+    id: number,
+    title: string
+    src: string
+}
