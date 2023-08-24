@@ -1,8 +1,8 @@
+import { Carousel } from "@/components/Carousel";
 import { SectionTitle } from "@/components/SectionTitle";
-import { Layer } from "@/components/carousel/Layer";
+import { ProjectLayer } from "@/components/home/ProjectLayer";
 import { EProjectsCategory } from "@/types/index";
 import { renderDriveImage } from "@/utils/renderDriveImage";
-import { Carousel } from "../carousel/Carousel";
 
 const example = [
     {
@@ -81,8 +81,8 @@ export const Projects = () => {
                 >
                     {example.map(({ src, title }) => {
                         return (
-                            <div className="relative h-[400px] xl:h-[700px] w-full embla-slide" key={src}>
-                                <Layer title={title} src={src} />
+                            <div className="relative h-[400px] xl:h-[700px] w-full embla-slide flex-[0_0_25%]" key={src}>
+                                <ProjectLayer title={title} src={src} />
                             </div>
                         );
                     })}
