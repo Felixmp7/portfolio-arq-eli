@@ -82,7 +82,7 @@ export default function ProjectsPage() {
                         if (index === 3) index = 0;
                         return (
                             <div key={id} className={className}>
-                                <ProjectItem title={projectTitle} src={image} />
+                                <ProjectItem title={projectTitle} src={image} id={id} />
                             </div>
                         );
                     })}
@@ -100,7 +100,7 @@ export default function ProjectsPage() {
                         if (index === 3) index = 0;
                         return (
                             <div key={id} className={className}>
-                                <ProjectItem title={projectTitle} src={image} />
+                                <ProjectItem title={projectTitle} src={image} id={id} />
                             </div>
                         );
                     })}
