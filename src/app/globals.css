@@ -48,6 +48,9 @@
     }
   }
   @media screen and (max-width: 640px) {
+    .bg-home-banner {
+      height: 100vh;
+    }
     .bg-common-config {
       background-position-x: center;
     }
