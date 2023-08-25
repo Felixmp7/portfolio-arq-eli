@@ -22,6 +22,7 @@ export type TNavLink = {
 }
 
 export type TProjectDetails = {
+    id: number
     images: string[],
     title: string,
     location: string
