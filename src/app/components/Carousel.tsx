@@ -1,9 +1,9 @@
 'use client';
 
-import { useCarousel } from "@/hooks/useCarousel";
 import useEmblaCarousel, { EmblaOptionsType } from "embla-carousel-react";
 import { PropsWithChildren } from "react";
 import { BsFillArrowLeftCircleFill, BsFillArrowRightCircleFill } from 'react-icons/bs';
+import { useCarousel } from "src/hooks/useCarousel";
 
 type TProps = PropsWithChildren & EmblaOptionsType;
 

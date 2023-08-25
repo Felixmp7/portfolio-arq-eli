@@ -3,7 +3,7 @@
 import { TextAreaField } from "@/components/fields/TextAreaField";
 import { TextField } from "@/components/fields/TextField";
 import { BiSend } from 'react-icons/bi';
-import { useContactForm } from "src/app/hooks/useContactForm";
+import { useContactForm } from "src/hooks/useContactForm";
 
 export const ContactForm = () => {
     const {
