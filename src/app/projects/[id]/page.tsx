@@ -59,7 +59,7 @@ export default function Project({ params: { id }}: IProps) {
             <BannerHeader bgClassName="bg-home-banner">
                 <h1 className='mb-5 select-none text-4xl md:text-6xl font-semibold'>Proyecto {id}</h1>
             </BannerHeader>
-            <section className="grid grid-cols-2 items-center my-10">
+            <section className="grid md:grid-cols-2 md:gap-0 gap-10 items-center my-10">
                 <div className="px-container">
                     <Subtitle1 className="mb-3">Resumen del proyecto</Subtitle1>
                     <p className="leading-relaxed font-light">
