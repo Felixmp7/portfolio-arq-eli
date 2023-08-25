@@ -18,7 +18,7 @@ export const AboutResume = () => {
                 </div>
                 <div>
                     <Subtitle1>our <br /> specialization</Subtitle1>
-                    <div className="flex items-end gap-10 xl:block">
+                    <div className="grid place-content-center sm:place-content-start sm:flex sm:items-end sm:gap-10 xl:block">
                         <div className="text-5xl my-4 text-isabelline-800">
                             <PiBuildingsThin />
                             <Subtitle2 subtitle="Architecture" />
