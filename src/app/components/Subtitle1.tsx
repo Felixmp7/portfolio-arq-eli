@@ -7,7 +7,7 @@ interface IProps {
 }
 export const Subtitle1 = ({ children, className = '' }: IProps) => {
     const classes = clsx({
-        'font-bold text-xl leading-6': true,
+        'font-bold text-lg leading-6 sm:text-xl': true,
         [className]: !!className
     });
     return (

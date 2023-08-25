@@ -7,7 +7,7 @@ interface IProps {
 }
 export const SectionTitle = ({ title, complement, className = '' }: IProps) => {
     const classNames = clsx({
-        "text-4xl uppercase font-semibold tracking-[.5rem]": true,
+        "text-xl sm:text-4xl uppercase font-semibold tracking-[.5rem]": true,
         [className]: !!className
     });
     return (
