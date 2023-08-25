@@ -6,7 +6,7 @@ interface IProps {
 }
 export const Subtitle2 = ({ subtitle, className = '' }: IProps) => {
     const classes = clsx({
-        'font-bold text-sm leading-none uppercase tracking-widest': true,
+        'font-bold text-xs sm:text-sm leading-none uppercase tracking-widest': true,
         [className]: !!className
     });
     return (
