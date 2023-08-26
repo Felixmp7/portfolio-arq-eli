@@ -1,8 +1,10 @@
 /* eslint-disable max-len */
+import { GET } from "@/api/services/route";
 import { BannerHeader } from "@/components/BannerHeader";
 import { Service } from "@/components/services/Service";
 
-export default function ServicesPage() {
+export default async function ServicesPage() {
+    const services = await GET();
     return (
         <>
             <BannerHeader bgClassName="bg-common-config bg-indian-red">
@@ -13,29 +15,17 @@ export default function ServicesPage() {
                     </p>
                 </div>
             </BannerHeader>
-            <Service
-                title="Diseño de interiores"
-                src="/assets/banners/bedroom.png"
-                description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s."
-                resume="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-            />
-            <Service isReverseLayout
-                title="Planos"
-                src="/assets/banners/plans.jpeg"
-                description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s."
-                resume="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-            />
-            <Service
-                title="Modelados 3D"
-                src="/assets/banners/3D.jpeg"
-                description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s."
-                resume="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-            />
-            <Service isReverseLayout
-                title="Renders"
-                src="/assets/banners/office.png"
-                description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s." resume="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-            />
+            {services.map(({ title, description, resume, generalGuidelines, id }) => (
+                <Service
+                    key={id}
+                    id={id}
+                    title={title}
+                    src="/assets/banners/bedroom.png"
+                    description={description}
+                    resume={resume}
+                    generalGuidelines={generalGuidelines}
+                />
+            ))}
         </>
     );
 }
