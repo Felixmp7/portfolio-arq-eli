@@ -21,11 +21,12 @@ model Project {
 }
 
 model Service {
-  id          Int    @id @default(autoincrement())
-  title       String
-  src         String
-  description String
-  resume      String
+  id                Int    @id @default(autoincrement())
+  title             String
+  src               String
+  description       String
+  generalGuidelines String
+  resume            String
 }
 
 model TrendingProject {
