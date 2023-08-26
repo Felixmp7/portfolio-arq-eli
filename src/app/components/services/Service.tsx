@@ -1,17 +1,14 @@
 import { CTA } from "@/components/CTA";
 import { Subtitle2 } from "@/components/Subtitle2";
+import { TService } from "@/types/index";
 import clsx from "clsx";
 import Image from "next/image";
 
-interface IProps {
-    title: string;
-    resume: string;
-    description: string;
-    src: string,
+type TProps =  TService & {
     isReverseLayout?:boolean
 }
 
-export const Service = ({ title, resume, description, isReverseLayout, src }: IProps) => {
+export const Service = ({ title, resume, description, isReverseLayout, src, generalGuidelines }: TProps) => {
     const layoutClasses = clsx({
         'flex flex-col gap-y-10 md:gap-x-20 items-center md:flex-row z-20': true,
         'md:flex-row-reverse': isReverseLayout
@@ -35,7 +32,7 @@ export const Service = ({ title, resume, description, isReverseLayout, src }: IP
                     <Subtitle2 subtitle="¿En qué consiste?" />
                     <p className="mt-4 mb-8 font-light">{description}</p>
                     <Subtitle2 subtitle="Pautas Generales" />
-                    <p className="mt-4 font-light">{description}</p>
+                    <p className="mt-4 font-light">{generalGuidelines}</p>
                 </div>
             </div>
         </div>

@@ -7,9 +7,9 @@ export const Footer = () => {
             <ul className="flex gap-8 py-3">
                 <NavbarItems />
             </ul>
-            <span className='flex items-center space-x-3'>
+            <span className='flex flex-col sm:flex-row items-center space-x-3'>
                 <SocialMedia />
-                <span className='text-zinc-400'>Powered by Felix Pacheco | 2023</span>
+                <span className='text-xs sm:text-sm text-zinc-400'>Powered by Felix Pacheco | 2023</span>
             </span>
         </footer>
     );

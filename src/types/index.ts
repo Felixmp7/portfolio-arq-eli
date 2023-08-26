@@ -43,3 +43,12 @@ export type TTrendingProject = {
     title: string
     src: string
 }
+
+export type TService = {
+    id: number,
+    title: string;
+    resume: string;
+    description: string;
+    src: string,
+    generalGuidelines: string
+}

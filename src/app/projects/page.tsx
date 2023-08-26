@@ -17,11 +17,11 @@ export default async function ProjectsPage() {
                     </p>
                 </div>
             </BannerHeader>
-            <section className="pt-24">
-                <ProjectCategory projects={interiorDesigns} />
+            <section className="mt-24">
+                <ProjectCategory title="Diseño de" complement="Interiores"  projects={interiorDesigns} />
             </section>
-            <section className="pt-24">
-                <ProjectCategory projects={plans} />
+            <section className="mt-24">
+                <ProjectCategory title="Planos" projects={plans} />
             </section>
         </>
     );
