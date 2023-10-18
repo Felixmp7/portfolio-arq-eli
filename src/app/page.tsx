@@ -18,7 +18,11 @@ export default function HomePage() {
                         </span>
                     </h1>
                     <p className='max-w-md leading-5 md:max-w-xl md:leading-6 md:text-base mb-5'>
-                        Hola, mi nombre es Eliana. Soy Arquitecto de Caracas, Venezuela. <br/> Tengo 26 años y me apasiona todo lo relacionado con planificación, diseño y desarrollo de proyectos de arquitectura.
+                        Hola, mi nombre es Eliana Guerrero, arquitecto e interiorista de 26 años
+                        residenciada en Caracas, Venezuela con +3 años de experiencia en la industria.
+                        <br />
+                        <br />
+                        Mi objetivo es transformar espacios en entornos únicos, funcionales y estéticamente agradables. Al explorar mi portafolio, encontraran una colección de proyectos que reflejan mi estilo, pasión y dedicación en el arte del diseño de interiores.
                     </p>
                     <CTA />
                 </div>
