@@ -11,25 +11,33 @@ export const AboutResume = () => {
             <SectionTitle title="Sobre" complement="EAGV" />
             <div className="xl:flex xl:justify-between xl:gap-20 mt-12 text-left">
                 <div className="xl:mb-0 mb-10">
-                    <Subtitle1>we turn ideas into <br /> works of art</Subtitle1>
+                    <Subtitle1>transformamos ideas en <br /> piezas de arte</Subtitle1>
                     <p className="text-gray-500 leading-6 mt-4 xl:max-w-xs">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        En EAGV Architecture &amp; Interior Design, transformamos tus ideas en piezas de arte que
+                        perduren en el tiempo, mi pasión esta profundamente arraigada en el diseño de interiores
+                        residenciales y comerciales, donde he perfeccionado mis habilidades para crear espacios que
+                        no solo lucen impresionantes, sino que también tengan una conexión con las personas que los
+                        habitan.
+                        <br />
+                        <br />
+                        Desde la creación de hogares acogedores y personalizados hasta el diseño de espacios
+                        comerciales dinámicos y cautivadores, me dedico a hacer realidad las visiones de mis clientes. Creo que cada espacio tiene una historia que contar y mi función es darle voz a través de un diseño bien pensado. Para mi cada proyecto es una oportunidad para combinar forma y función, equilibrar lo estético y lo practico e infundir creatividad en cada uno de los elementos que lo conforman.
                     </p>
                 </div>
                 <div>
-                    <Subtitle1>our <br /> specialization</Subtitle1>
+                    <Subtitle1>nuestra <br /> especialización</Subtitle1>
                     <div className="grid place-content-center sm:place-content-start sm:flex sm:items-end sm:gap-10 xl:block">
                         <div className="text-5xl my-4 text-isabelline-800">
                             <PiBuildingsThin />
-                            <Subtitle2 subtitle="Architecture" />
+                            <Subtitle2 subtitle="Arquitectura" />
                         </div>
                         <div className="text-5xl mb-4 text-redwood">
                             <PiWarehouseThin />
-                            <Subtitle2 subtitle="Interiors" />
+                            <Subtitle2 subtitle="Interiores" />
                         </div>
                         <div className="text-5xl mb-4 text-blue-munsel">
                             <PiCompassToolThin />
-                            <Subtitle2 subtitle="Planing" />
+                            <Subtitle2 subtitle="Planos" />
                         </div>
                     </div>
                 </div>

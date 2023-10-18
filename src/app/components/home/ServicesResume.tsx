@@ -18,7 +18,7 @@ export const ServicesResume = () => {
                     />
                     <Subtitle2 subtitle="Diseño de interiores" />
                     <p className="text-gray-500 leading-6 text-sm mt-3">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Planificamos y coordinamos el diseño del espacio que necesites.
                     </p>
                 </div>
                 <div className="text-7xl">
@@ -31,7 +31,7 @@ export const ServicesResume = () => {
                     />
                     <Subtitle2 subtitle="Planos" />
                     <p className="text-gray-500 leading-6 text-sm mt-3">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Digitalizamos tus sketches, dibujos de carpintería o el espacio que desees en AutoCAD.
                     </p>
                 </div>
                 <div className="text-7xl">
@@ -44,7 +44,7 @@ export const ServicesResume = () => {
                     />
                     <Subtitle2 subtitle="Modelado 3D" />
                     <p className="text-gray-500 leading-6 text-sm mt-3">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Modelamos el espacio que necesites, mediante planos 2D o imágenes de referencia.
                     </p>
                 </div>
                 <div className="text-7xl">
