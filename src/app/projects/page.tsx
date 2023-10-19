@@ -1,12 +1,9 @@
-/* eslint-disable max-len */
 import { GET } from "@/api/projects/route";
 import { BannerHeader } from "@/components/BannerHeader";
 import ProjectCategory from "@/components/projects/ProjectCategory";
 
 export default async function ProjectsPage() {
     const projects = await GET();
-    const interiorDesigns = projects.slice(0, 4);
-    const plans = projects.slice(5, 9);
     return (
         <>
             <BannerHeader bgClassName="bg-common-config bg-isabelline-700">
@@ -18,10 +15,7 @@ export default async function ProjectsPage() {
                 </div>
             </BannerHeader>
             <section className="mt-24">
-                <ProjectCategory title="Diseño de" complement="Interiores"  projects={interiorDesigns} />
-            </section>
-            <section className="mt-24">
-                <ProjectCategory title="Planos" projects={plans} />
+                <ProjectCategory title="Diseño de" complement="Interiores"  projects={projects} />
             </section>
         </>
     );
