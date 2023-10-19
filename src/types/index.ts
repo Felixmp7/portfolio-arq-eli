@@ -45,10 +45,11 @@ export type TTrendingProject = {
 }
 
 export type TService = {
-    id: number,
+    id: number;
     title: string;
     resume: string;
     description: string;
-    src: string,
-    generalGuidelines: string
+    howWeDoIt: string[];
+    whatIncludes: string[];
+    src: string;
 }
