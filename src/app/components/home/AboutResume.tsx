@@ -13,13 +13,6 @@ export const AboutResume = () => {
                 <div className="xl:mb-0 mb-10">
                     <Subtitle1>transformamos ideas en <br /> piezas de arte</Subtitle1>
                     <p className="text-gray-500 leading-6 mt-4 xl:max-w-xs">
-                        En EAGV Architecture &amp; Interior Design, transformamos tus ideas en piezas de arte que
-                        perduren en el tiempo, mi pasión esta profundamente arraigada en el diseño de interiores
-                        residenciales y comerciales, donde he perfeccionado mis habilidades para crear espacios que
-                        no solo lucen impresionantes, sino que también tengan una conexión con las personas que los
-                        habitan.
-                        <br />
-                        <br />
                         Desde la creación de hogares acogedores y personalizados hasta el diseño de espacios
                         comerciales dinámicos y cautivadores, me dedico a hacer realidad las visiones de mis clientes. Creo que cada espacio tiene una historia que contar y mi función es darle voz a través de un diseño bien pensado. Para mi cada proyecto es una oportunidad para combinar forma y función, equilibrar lo estético y lo practico e infundir creatividad en cada uno de los elementos que lo conforman.
                     </p>
