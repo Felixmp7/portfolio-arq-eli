@@ -9,19 +9,14 @@ type TProps = {
 }
 
 const ProjectCategory = ({ projects, title, complement }: TProps) => {
-    const noProjects = projects.length === 0;
     return (
         <>
             <SectionTitle title={title} complement={complement} className="ml-10 mb-12" />
-            <ul className="grid md:grid-cols-8 gap-1 projects-layout" >
-                {noProjects ? Array.from(Array(8).keys()).map((item) => {
+            <ul className="grid md:grid-cols-8 gap-4 projects-layout" >
+                {projects.map(({ id, title, images }) => {
                     return (
-                        <li key={item} className='bg-gray-400 animate-pulse h-[400px]'  />
-                    );
-                }) :projects.map(({ id, title, images }) => {
-                    return (
-                        <li key={id}>
-                            <ProjectItem title={title} src={images[0]} id={id} />
+                        <li key={id} className="h-[400px]">
+                            <ProjectItem title={title} images={images} id={id} />
                         </li>
                     );
                 })}
