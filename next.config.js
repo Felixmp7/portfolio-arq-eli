@@ -1,12 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-        domains: ['drive.google.com'],
         remotePatterns: [
             {
                 protocol: 'https',
-                hostname: "*.googleusercontent.com",
-                pathname: "**"
+                hostname: 'earnionc.sirv.com',
+                port: '',
+                pathname: '/portfolio-eli/**'
             }
         ]
     }
