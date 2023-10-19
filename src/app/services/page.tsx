@@ -7,7 +7,7 @@ export default async function ServicesPage() {
     const services = await GET();
     return (
         <>
-            <BannerHeader bgClassName="bg-common-config bg-indian-red">
+            <BannerHeader bgClassName="bg-common-config bg-dravys-gray">
                 <div className="px-10 py-5">
                     <h1 className='mb-5 text-4xl md:text-6xl font-semibold select-none'>Servicios</h1>
                     <p className='max-w-md leading-5 md:max-w-xl md:leading-6 md:text-base mb-5'>
@@ -15,15 +15,11 @@ export default async function ServicesPage() {
                     </p>
                 </div>
             </BannerHeader>
-            {services.map(({ title, description, resume, generalGuidelines, id }) => (
+            {services.map((service, index) => (
                 <Service
-                    key={id}
-                    id={id}
-                    title={title}
-                    src="/assets/banners/bedroom.png"
-                    description={description}
-                    resume={resume}
-                    generalGuidelines={generalGuidelines}
+                    {...service}
+                    key={service.id}
+                    isReverseLayout={index % 2 !== 0}
                 />
             ))}
         </>
