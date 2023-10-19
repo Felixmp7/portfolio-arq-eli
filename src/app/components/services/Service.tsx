@@ -8,7 +8,7 @@ type TProps =  TService & {
     isReverseLayout?:boolean
 }
 
-export const Service = ({ title, resume, description, isReverseLayout, src, generalGuidelines }: TProps) => {
+export const Service = ({ title, resume, isReverseLayout, src, howWeDoIt, whatIncludes }: TProps) => {
     const layoutClasses = clsx({
         'flex flex-col gap-y-10 md:gap-x-20 items-center md:flex-row z-20': true,
         'md:flex-row-reverse': isReverseLayout
@@ -29,10 +29,14 @@ export const Service = ({ title, resume, description, isReverseLayout, src, gene
                     <CTA />
                 </div>
                 <div className="bg-isabelline shadow-md rounded-md p-5 text-dravys-gray-500 max-w-md hover:scale-110 ease-in-out duration-75">
-                    <Subtitle2 subtitle="¿En qué consiste?" />
-                    <p className="mt-4 mb-8 font-light">{description}</p>
-                    <Subtitle2 subtitle="Pautas Generales" />
-                    <p className="mt-4 font-light">{generalGuidelines}</p>
+                    <Subtitle2 subtitle="¿Que incluye?" />
+                    <ul className="mt-4 mb-8 font-light list-inside">{whatIncludes.map((item) => (
+                        <li key={item}>- {item}</li>
+                    ))}</ul>
+                    <Subtitle2 subtitle="¿Cómo lo hacemos?" />
+                    <ul className="mt-4 font-light list-inside">{howWeDoIt.map((item) => (
+                        <li key={item}>- {item}</li>
+                    ))}</ul>
                 </div>
             </div>
         </div>
