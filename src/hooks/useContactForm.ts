@@ -1,9 +1,9 @@
 'use client';
 
-import { POST } from "@/api/send/route";
 import { TSendEmailForm } from "@/types/index";
 import { SendEmailSchema } from "@/utils/schemas/contact";
-import { getEmailCookie } from "@/utils/serverActions";
+import { getEmailCookie, setEmailCookie } from "@/utils/serverActions";
+import { postSendEmail } from "@/utils/services";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
@@ -24,14 +24,13 @@ export const useContactForm = () => {
 
     const onSubmit = async (formValues: TSendEmailForm) => {
         try {
-            const response = await POST(formValues);
-            console.log(response);
-            // if (response.status === 200) {
-            //     await setEmailCookie();
-            //     if (!emailSent) {
-            //         setEmailSent(true);
-            //     }
-            // }
+            const response = await postSendEmail(formValues);
+            if (response.id) {
+                await setEmailCookie();
+                if (!emailSent) {
+                    setEmailSent(true);
+                }
+            }
         } catch (error) {
             console.log('error', error);
         }

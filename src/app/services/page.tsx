@@ -1,10 +1,9 @@
-/* eslint-disable max-len */
-import { GET } from "@/api/services/route";
 import { BannerHeader } from "@/components/BannerHeader";
 import { Service } from "@/components/services/Service";
+import { getServices } from "@/utils/services";
 
 export default async function ServicesPage() {
-    const services = await GET();
+    const services = await getServices();
     return (
         <>
             <BannerHeader bgClassName="bg-common-config bg-dravys-gray">

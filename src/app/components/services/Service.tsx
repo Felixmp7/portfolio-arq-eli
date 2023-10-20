@@ -18,6 +18,7 @@ export const Service = ({ title, resume, isReverseLayout, src, howWeDoIt, whatIn
         <div className="py-container md:py-0 md:h-screen text-isabelline grid place-content-center px-container relative">
             <Image
                 fill
+                className="object-cover"
                 src={src}
                 alt={title}
             />
