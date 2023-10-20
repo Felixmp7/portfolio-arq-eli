@@ -1,1 +1,0 @@
-export const renderDriveImage = (url: string) => url.replace('file/d/', 'uc?export=view&id=').replace('/view?usp=drive_link', '');
