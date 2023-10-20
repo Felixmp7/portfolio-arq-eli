@@ -7,12 +7,22 @@ import { BiSend } from 'react-icons/bi';
 
 export const ContactForm = () => {
     const {
+        emailSent,
         formMethods: {
             register, handleSubmit, formState:{
                 errors, isSubmitting
             }
         }, onSubmit
     } = useContactForm();
+
+    if (emailSent) return (
+        <div className="px-10 sm:px-0 w-full sm:w-[600px] mx-auto my-10 grid sm:grid-cols-2 gap-5 sm:place-content-center">
+            <div className="sm:col-span-2">
+                <h2 className="text-2xl font-bold text-center">Gracias por contactarnos</h2>
+                <p className="text-center">En breve nos pondremos en contacto con usted.</p>
+            </div>
+        </div>
+    );
 
     return (
         <form className="px-10 sm:px-0 w-full sm:w-[600px] mx-auto my-10 grid sm:grid-cols-2 gap-5 sm:place-content-center" onSubmit={handleSubmit(onSubmit)}>
