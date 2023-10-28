@@ -1,9 +1,9 @@
+import { GET } from "@/api/services/route";
 import { BannerHeader } from "@/components/BannerHeader";
 import { Service } from "@/components/services/Service";
-import { getServices } from "@/utils/services";
 
 export default async function ServicesPage() {
-    const services = await getServices();
+    const services = await GET();
     return (
         <>
             <BannerHeader bgClassName="bg-common-config bg-dravys-gray">

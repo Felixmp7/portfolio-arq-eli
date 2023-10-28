@@ -1,16 +1,16 @@
+import { GET } from "@/api/projects/route";
 import { BannerHeader } from "@/components/BannerHeader";
 import ProjectCategory from "@/components/projects/ProjectCategory";
-import { getProjects } from "@/utils/services";
 
 export default async function ProjectsPage() {
-    const projects = await getProjects();
+    const projects = await GET();
     return (
         <>
             <BannerHeader bgClassName="bg-common-config bg-isabelline-700">
                 <div className="px-10 py-5">
                     <h1 className='mb-5 text-4xl md:text-6xl font-semibold select-none'>Proyectos</h1>
                     <p className='max-w-md leading-5 md:max-w-xl md:leading-6 md:text-base mb-5'>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        En esta galería de imágenes te invito a conocer un poco más sobre el trabajo que he realizado como arquitecto e interiorista durante estos años de experiencia. En cada uno de los proyectos podrás ver los resultados que se pueden lograr a través de un plan de diseño bien ejecutado, el uso de materiales de alta calidad y un toque de ingenio creativo.
                     </p>
                 </div>
             </BannerHeader>

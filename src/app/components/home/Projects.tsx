@@ -1,10 +1,10 @@
+import { GET } from "@/api/route";
 import { Carousel } from "@/components/Carousel";
 import { SectionTitle } from "@/components/SectionTitle";
 import { ProjectLayer } from "@/components/home/ProjectLayer";
-import { getTrendingProjects } from "@/utils/services";
 
 export const Projects = async () => {
-    const trendingProjects = await getTrendingProjects();
+    const trendingProjects = await GET();
     return (
         <section className="text-center py-10 select-none">
             <SectionTitle title="Mis" complement="Proyectos" />

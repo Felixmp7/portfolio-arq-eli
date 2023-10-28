@@ -15,11 +15,6 @@ const navLinks: TNavLink[] = [
         id: 2,
         url: '/projects',
         name: 'Proyectos'
-    },
-    {
-        id: 3,
-        url: '/contact',
-        name: 'Contacto'
     }
 ];
 
