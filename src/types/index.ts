@@ -38,10 +38,8 @@ export enum ETabKeyIcon {
     goal = 'goal',
 }
 
-export type TTrendingProject = {
-    id: number,
-    title: string
-    src: string
+export type TTrendingProject = TProjectDetails & {
+    trending: string
 }
 
 export type TService = {

@@ -14,6 +14,7 @@ model Project {
   id          Int      @id @default(autoincrement())
   images      String[]
   title       String
+  trending    String?
   location    String
   year        String
   goal        String
@@ -28,10 +29,4 @@ model Service {
   howWeDoIt    String[]
   whatIncludes String[]
   resume       String
-}
-
-model TrendingProject {
-  id    Int    @id @default(autoincrement())
-  title String @default("")
-  src   String
 }

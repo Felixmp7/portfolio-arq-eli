@@ -18,10 +18,10 @@ export const Projects = async () => {
                         '(max-width: 768px)': { slidesToScroll: 2 }
                     }}
                 >
-                    {trendingProjects.map(({ id, src, title }) => {
+                    {trendingProjects.map(({ id, trending, title }) => {
                         return (
                             <div key={id} className="relative h-[400px] xl:h-[700px] w-full embla-slide flex-[0_0_25%]">
-                                <ProjectLayer title={title} src={src} />
+                                <ProjectLayer title={title} src={trending} />
                             </div>
                         );
                     })}
