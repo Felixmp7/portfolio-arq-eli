@@ -1,4 +1,4 @@
-import { prisma } from "prisma/client";
+import prisma from "prisma/client";
 import { TProjectDetails, TService, TTrendingProject } from "src/types";
 
 export async function getProjectDetails() {
