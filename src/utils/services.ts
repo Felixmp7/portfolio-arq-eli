@@ -1,4 +1,4 @@
-import prisma from "prisma/client";
+import { prisma } from "prisma/client";
 import { TProjectDetails, TService, TTrendingProject } from "src/types";
 
 export async function getProjectDetails() {
@@ -34,6 +34,7 @@ export async function getTrendingProjects() {
         });
         return trendingProjects as TTrendingProject[];
     } catch (error) {
+        console.log(error);
         return [];
     }
 }
