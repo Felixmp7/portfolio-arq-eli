@@ -9,7 +9,7 @@ export const Footer = () => {
             </ul>
             <span className='flex flex-col sm:flex-row items-center space-x-3'>
                 <SocialMedia />
-                <span className='text-xs text-zinc-400'>Powered by Felix Pacheco | 2023</span>
+                <span className='text-[10px] text-zinc-400 mt-3 sm:mt-0'>Powered by Felix Pacheco | 2023</span>
             </span>
         </footer>
     );

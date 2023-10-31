@@ -14,7 +14,7 @@ export default async function ProjectsPage() {
                     </p>
                 </div>
             </BannerHeader>
-            <section className="mt-24">
+            <section className="mt-10 sm:mt-24">
                 <ProjectCategory title="Diseño de" complement="Interiores"  projects={projects} />
             </section>
         </>

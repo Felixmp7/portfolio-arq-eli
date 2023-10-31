@@ -10,11 +10,11 @@ export default function HomePage() {
             <BannerHeader bgClassName="bg-home-banner">
                 <div className="px-10 py-5">
                     <h1 className='mb-5 select-none'>
-                        <span className="text-4xl md:text-6xl font-semibold">Arquitecto</span>,
+                        <span className="text-3xl sm:text-4xl md:text-6xl font-semibold">Arquitecto</span>,
                         <br />
-                        <span className="text-3xl md:text-5xl font-normal">diseñadora de interiores y
-                            <br />
-                            apasionada por la cocina.
+                        <span className="text-xl sm:text-3xl md:text-5xl font-normal">diseñadora de interiores y
+                            <br className="hidden md:block" />
+                            <span className="ml-1 md:ml-0">apasionada por la cocina.</span>
                         </span>
                     </h1>
                     <p className='max-w-md leading-5 md:max-w-xl md:leading-6 md:text-base mb-5'>

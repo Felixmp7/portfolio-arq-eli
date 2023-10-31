@@ -16,7 +16,7 @@ export const Navbar = () => {
                     height={80}
                 />
             </Link>
-            <ul className="flex justify-end gap-8 py-3 text-inherit">
+            <ul className="ml-3 md:ml-0 flex justify-end gap-5 py-3 text-inherit">
                 <NavbarItems />
             </ul>
         </nav>
