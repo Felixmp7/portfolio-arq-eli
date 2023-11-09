@@ -18,7 +18,7 @@ export const SocialMedia = () => {
                 </Link>
             </li>
             <li>
-                <Link href="https://drive.google.com/drive/u/0/folders/1OI-_5oPJcomQ6drZMP453mJLX5IRXjp8" target='_blank'>
+                <Link href="https://drive.google.com/drive/folders/17vyQg9MfRebmrz1BU9MMJ3AlTeIZntSp?usp=sharing" target='_blank'>
                     <SiGoogledrive />
                 </Link>
             </li>
