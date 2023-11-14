@@ -1,8 +1,8 @@
 /* eslint-disable max-len */
+import { HomeOfficeSpline } from "@/components/HomeOfficeSpline";
 import { SectionTitle } from "@/components/SectionTitle";
 import { Subtitle1 } from "@/components/Subtitle1";
 import { Subtitle2 } from "@/components/Subtitle2";
-import Image from "next/image";
 import { PiBuildingsThin, PiCompassToolThin, PiWarehouseThin } from 'react-icons/pi';
 
 export const AboutResume = () => {
@@ -34,12 +34,8 @@ export const AboutResume = () => {
                         </div>
                     </div>
                 </div>
-                <div className="hidden xl:block max-w-sm w-full h-80 relative">
-                    <Image
-                        fill
-                        src="/assets/about.jpeg"
-                        alt="Buildings"
-                    />
+                <div className="xl:max-w-md xl:w-full w-96 mx-auto xl:h-auto h-80 xl:m-0 mt-8">
+                    <HomeOfficeSpline />
                 </div>
             </div>
         </section>
