@@ -34,7 +34,7 @@ export const AboutResume = () => {
                         </div>
                     </div>
                 </div>
-                <div className="xl:max-w-md xl:w-full w-96 mx-auto xl:h-auto h-80 xl:m-0 mt-8">
+                <div className="xl:max-w-md xl:w-full mx-auto xl:h-auto h-80 xl:m-0 mt-8">
                     <HomeOfficeSpline />
                 </div>
             </div>
