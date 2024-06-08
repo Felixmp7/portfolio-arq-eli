@@ -7,7 +7,7 @@ type Props = {
     keyIcon: ETabKeyIcon
 }
 
-export const Tab = ({title, keyIcon}: TProps) => {
+export const Tab = ({title, keyIcon}: Props) => {
     const ICONS = {
         [ETabKeyIcon.title]: <MdOutlineTitle />,
         [ETabKeyIcon.location]: <MdLocationPin />,

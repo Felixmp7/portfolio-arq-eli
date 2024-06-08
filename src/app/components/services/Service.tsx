@@ -8,7 +8,7 @@ type Props =  TService & {
     isReverseLayout?:boolean
 }
 
-export const Service = ({ title, resume, isReverseLayout, src, howWeDoIt, whatIncludes }: TProps) => {
+export const Service = ({ title, resume, isReverseLayout, src, howWeDoIt, whatIncludes }: Props) => {
     const layoutClasses = clsx({
         'flex flex-col gap-y-10 md:gap-x-20 items-center md:flex-row z-20': true,
         'md:flex-row-reverse': isReverseLayout

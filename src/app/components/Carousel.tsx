@@ -7,7 +7,7 @@ import { BsFillArrowLeftCircleFill, BsFillArrowRightCircleFill } from 'react-ico
 
 type Props = PropsWithChildren & EmblaOptionsType;
 
-export const Carousel = ({ children, ...options }: TProps) => {
+export const Carousel = ({ children, ...options }: Props) => {
     const [emblaRef, emblaAPI] = useEmblaCarousel(options);
     const { onNextButtonClick, onPrevButtonClick } = useCarousel(emblaAPI);
 

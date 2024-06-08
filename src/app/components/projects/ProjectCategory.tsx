@@ -8,7 +8,7 @@ type Props = {
     projects: TProjectDetails[]
 }
 
-const ProjectCategory = ({ projects, title, complement }: TProps) => {
+const ProjectCategory = ({ projects, title, complement }: Props) => {
     return (
         <>
             <SectionTitle title={title} complement={complement} className="ml-10 mb-12" />
