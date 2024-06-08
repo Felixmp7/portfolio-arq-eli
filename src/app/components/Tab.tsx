@@ -2,7 +2,7 @@ import { ETabKeyIcon } from "@/types/index";
 import { GoGoal } from 'react-icons/go';
 import { MdCalendarMonth, MdLocationPin, MdOutlineTitle } from 'react-icons/md';
 
-type TProps = {
+type Props = {
     title: string,
     keyIcon: ETabKeyIcon
 }

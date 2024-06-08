@@ -2,7 +2,7 @@ import { SectionTitle } from "@/components/SectionTitle";
 import { ProjectItem } from "@/components/projects/ProjectItem";
 import { TProjectDetails } from "@/types/index";
 
-type TProps = {
+type Props = {
     title: string,
     complement?: string,
     projects: TProjectDetails[]

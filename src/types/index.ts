@@ -8,7 +8,7 @@ export enum EProjectsCategory {
     bedrooms = 'bedrooms',
 }
 
-export type TSendEmailForm = {
+export type SendEmailForm = {
     name: string
     phone: string
     email: string
@@ -16,19 +16,20 @@ export type TSendEmailForm = {
     message: string
 }
 
-export type TNavLink = {
+export type NavLink = {
     id: number,
     url: string,
     name: string
 }
 
-export type TProjectDetails = {
+export type Project = {
     id: number
     images: string[],
     title: string,
     location: string
     year: string,
     goal: string,
+    trendingPicture?: string,
     description: string
 }
 
@@ -39,11 +40,7 @@ export enum ETabKeyIcon {
     goal = 'goal',
 }
 
-export type TTrendingProject = TProjectDetails & {
-    trending: string
-}
-
-export type TService = {
+export type Service = {
     id: number;
     title: string;
     resume: string;

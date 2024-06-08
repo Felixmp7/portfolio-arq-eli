@@ -1,9 +1,9 @@
 import { BannerHeader } from "@/components/BannerHeader";
 import ProjectCategory from "@/components/projects/ProjectCategory";
-import { getProjectDetails } from "@/utils/services";
+import { getProjects } from "@/utils/services";
 
 export default async function ProjectsPage() {
-    const projects = await getProjectDetails();
+    const projects = await getProjects();
     return (
         <>
             <BannerHeader bgClassName="bg-common-config bg-isabelline-700">

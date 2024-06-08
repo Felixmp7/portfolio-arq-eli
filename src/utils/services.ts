@@ -1,40 +1,16 @@
-import { prisma } from "prisma/client";
-import { TProjectDetails, TService, TTrendingProject } from "src/types";
+import { promises as fs } from 'fs';
+import { Project, Service } from '../types';
 
-export async function getProjectDetails() {
-    try {
-        const projects: TProjectDetails[] = await prisma.project.findMany();
-        return projects;
-    } catch (error) {
-        return [];
-    }
-}
+const parseFile = (file: string) => JSON.parse(file);
 
-export async function getServices() {
-    try {
-        const services: TService[] = await prisma.service.findMany({
-            orderBy: {
-                id: 'asc'
-            }
-        });
-        return services;
-    } catch (error) {
-        return [];
-    }
-}
+const readFile = (path: string) => fs.readFile(process.cwd() + path, 'utf8');
 
-export async function getTrendingProjects() {
-    try {
-        const trendingProjects = await prisma.project.findMany({
-            where: {
-                trending: {
-                    not: null
-                }
-            }
-        });
-        return trendingProjects as TTrendingProject[];
-    } catch (error) {
-        console.log(error);
-        return [];
-    }
-}
+export const getProjects = async () => {
+    const file = await readFile('/.data/projects.json');
+    return parseFile(file) as Project[];
+};
+
+export const getServices = async () => {
+    const file = await readFile('/.data/services.json');
+    return parseFile(file) as Service[];
+};

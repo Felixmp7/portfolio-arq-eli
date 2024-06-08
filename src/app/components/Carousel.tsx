@@ -5,7 +5,7 @@ import useEmblaCarousel, { EmblaOptionsType } from "embla-carousel-react";
 import { PropsWithChildren } from "react";
 import { BsFillArrowLeftCircleFill, BsFillArrowRightCircleFill } from 'react-icons/bs';
 
-type TProps = PropsWithChildren & EmblaOptionsType;
+type Props = PropsWithChildren & EmblaOptionsType;
 
 export const Carousel = ({ children, ...options }: TProps) => {
     const [emblaRef, emblaAPI] = useEmblaCarousel(options);

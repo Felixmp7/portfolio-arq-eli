@@ -1,16 +1,17 @@
 "use client";
+
 import { useClickOutside } from "@/hooks/useClickOutside";
 import clsx from "clsx";
 import { PropsWithChildren, useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { SlClose } from 'react-icons/sl';
 
-type TProps = PropsWithChildren & {
+type Props = PropsWithChildren & {
     modalClasses?: string,
     onClickOutside: VoidFunction
 }
 
-export default function Modal({ children, modalClasses = '', onClickOutside  }: TProps) {
+export default function Modal({ children, modalClasses = '', onClickOutside  }: Props) {
     const [mounted, setMounted] = useState(false);
     const modalRef = useRef<HTMLDivElement>(null);
 

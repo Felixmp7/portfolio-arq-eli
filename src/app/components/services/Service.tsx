@@ -4,7 +4,7 @@ import { TService } from "@/types/index";
 import clsx from "clsx";
 import Image from "next/image";
 
-type TProps =  TService & {
+type Props =  TService & {
     isReverseLayout?:boolean
 }
 
