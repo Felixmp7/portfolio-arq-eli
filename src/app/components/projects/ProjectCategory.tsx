@@ -1,11 +1,11 @@
 import { SectionTitle } from "@/components/SectionTitle";
 import { ProjectItem } from "@/components/projects/ProjectItem";
-import { TProjectDetails } from "@/types/index";
+import { Project } from "@/types/index";
 
 type Props = {
     title: string,
     complement?: string,
-    projects: TProjectDetails[]
+    projects: Project[]
 }
 
 const ProjectCategory = ({ projects, title, complement }: Props) => {

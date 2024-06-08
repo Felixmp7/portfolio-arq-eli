@@ -1,6 +1,6 @@
-import { TSendEmailForm } from "@/types/index";
+import { SendEmailForm } from "@/types/index";
 
-export const EmailTemplate: React.FC<Readonly<TSendEmailForm>> = ({ name, message, phone, company, email }) => (
+export const EmailTemplate: React.FC<Readonly<SendEmailForm>> = ({ name, message, phone, company, email }) => (
     <div>
         <h1>Hola, Eliana! He recibido el siguiente correo desde tu portafolio:</h1>
         <br />

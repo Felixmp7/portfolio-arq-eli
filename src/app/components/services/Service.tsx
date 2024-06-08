@@ -1,10 +1,10 @@
 import { CTA } from "@/components/CTA";
 import { Subtitle2 } from "@/components/Subtitle2";
-import { TService } from "@/types/index";
+import { Service as ServiceType } from "@/types/index";
 import clsx from "clsx";
 import Image from "next/image";
 
-type Props =  TService & {
+type Props =  ServiceType & {
     isReverseLayout?:boolean
 }
 

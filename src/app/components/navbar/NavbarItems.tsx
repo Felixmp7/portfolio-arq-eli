@@ -1,11 +1,11 @@
 'use client';
 
-import { TNavLink } from '@/types/index';
+import { NavLink } from '@/types/index';
 import clsx from 'clsx';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
-const navLinks: TNavLink[] = [
+const navLinks: NavLink[] = [
     {
         id: 1,
         url: '/services',
