@@ -1,0 +1,53 @@
+[
+    {
+        "id": 1,
+        "title": "Diseño de interiores",
+        "resume": "Creamos el diseño que mas se adapte a tu gusto, presupuesto e ideas. Desde transformar un espacio en el hogar de tus sueños, a crear espacios comerciales que cautiven a tus clientes.",
+        "description": "Planificamos y coordinamos el diseño del espacio que necesites, para hacerlos agradables y funcionales, adaptándonos a las necesidades y gustos de cada cliente.",
+        "howWeDoIt": [
+            "Propuesta de distribución",
+            "Modelo 3D",
+            "Renders",
+            "Planos para ejecución del proyecto",
+            "Moodboard (incluye paleta de colores, mobiliario y materiales)"
+        ],
+        "whatIncludes": [
+            "Se realiza el levantamiento del espacio.",
+            "Se presenta una propuesta de distribución junto con un Moodboar.",
+            "Aprobada la distribución se realiza el modelado 3D y renders, indicando materiales, paleta decolores e iluminación.",
+            "Aprobado el proyecto se realizan los planos para la ejecución del mismo.",
+            "Se hace entrega de del proyecto final en formato digital."
+        ],
+        "src": "https://earnionc.sirv.com/portfolio-eli/services/design.jpeg"
+    },
+    {
+        "id": 2,
+        "title": "Planos",
+        "resume": "Envía la información que deseas digitalizar en AutoCAD y nosotros lo hacemos por ti. Incluye digitalización de planos en PDF, dibujos a mano o espacios que necesiten ser levantados para posteriormente digitalizar.",
+        "description": "Digitalizamos tus sketches, dibujos de carpintería o el espacio que desees en AutoCAD.",
+        "howWeDoIt": [
+            "Envía la información que deseas digitalizar o procedemos a medir el espacio que necesites.",
+            "Se procede a digitalizar la información recaudada.",
+            "Se Envían Archivos de previsualización para posibles correcciones,Aprobado se entregan los archivos en formato digital, originales y PDF."
+        ],
+        "whatIncludes": [
+            "Planos o dibujos en formato DWG y PDF"
+        ],
+        "src": "https://earnionc.sirv.com/portfolio-eli/services/plans.jpeg"
+    },
+    {
+        "id": 3,
+        "title": "Modelado 3D y Renders",
+        "resume": "Envía los planos 2D que desees transformar en 3D y lo hacemos por ti. Podemos realizarlo mediante planos con medidas reales o por medio de imágenes con medidas referenciales.",
+        "description": "Modelamos el espacio que necesites, mediante planos 2D o imágenes de referencia.",
+        "howWeDoIt": [
+            "Con el plano 2D o imágenes de referencia en mano, procedemos a realizar el modelado 3D.",
+            "Procedemos a agregar texturas y materiales para luego renderizar"
+        ],
+        "whatIncludes": [
+            "Modelado 3D en sketchup.",
+            "Renders en VRay."
+        ],
+        "src": "https://earnionc.sirv.com/portfolio-eli/services/renders.jpeg"
+    }
+]
