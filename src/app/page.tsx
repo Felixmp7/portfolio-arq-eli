@@ -1,10 +1,16 @@
 import { BannerHeader } from "@/components/BannerHeader";
 import { CTA } from "@/components/CTA";
+import { DownloadCVButton } from "@/components/DownloadCVButton";
 import { AboutResume } from "@/components/home/AboutResume";
 import { Projects } from "@/components/home/Projects";
 import { ServicesResume } from "@/components/home/ServicesResume";
+import { getYearsAgo } from "@/utils/timeAgo";
 
 export default function HomePage() {
+
+    const age = getYearsAgo(new Date(1996, 11, 9));
+    const yearsOfExperience = getYearsAgo(new Date(2021, 4, 1));
+
     return (
         <>
             <BannerHeader bgClassName="bg-home-banner">
@@ -18,13 +24,16 @@ export default function HomePage() {
                         </span>
                     </h1>
                     <p className='max-w-md leading-5 md:max-w-xl md:leading-6 md:text-base mb-5'>
-                        Hola, mi nombre es Eliana Guerrero, arquitecto e interiorista de 26 años
-                        residenciada en Caracas, Venezuela con +3 años de experiencia en la industria.
+                        Hola, mi nombre es Eliana Guerrero, Arquitecto e Interiorista de <span>{age}</span> años
+                        residenciada en Caracas, Venezuela con +<span>{yearsOfExperience}</span> años de experiencia en la industria.
                         <br />
                         <br />
                         Mi objetivo es transformar espacios en entornos únicos, funcionales y estéticamente agradables. Al explorar mi portafolio, encontraran una colección de proyectos que reflejan mi estilo, pasión y dedicación en el arte del diseño de interiores.
                     </p>
-                    <CTA />
+                    <footer className="flex gap-4">
+                        <CTA />
+                        <DownloadCVButton />
+                    </footer>
                 </div>
             </BannerHeader>
             <AboutResume />
